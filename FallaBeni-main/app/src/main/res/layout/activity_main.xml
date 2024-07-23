@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/LayoutUserInfos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textViewUsername"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/rubik_medium"
+                android:gravity="center"
+                android:text="Username"
+                android:textColor="#73326E"
+                android:textSize="@dimen/font_size_18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textAppName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/lobster"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/horoscope"
+                android:textSize="@dimen/font_size_24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/balance" />
+
+                <TextView
+                    android:id="@+id/textViewBalance"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="center"
+                    android:text="Bakiye"
+                    android:textColor="#73326E"
+                    android:textSize="@dimen/font_size_18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/layoutHoroscope"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_8dp"
+            android:layout_marginBottom="@dimen/space_8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LayoutUserInfos">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layoutAddHoroscope1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_8dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/LayoutUserInfos">
+
+                    <ImageView
+                        android:id="@+id/capricorne"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/capricorn" />
+
+                    <TextView
+                        android:id="@+id/txtViewHoroscope1"
+                        android:layout_width="36dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik_medium"
+                        android:gravity="center"
+                        android:text="@string/capricorn"
+                        android:textColor="@color/horoscope"
+                        android:textSize="@dimen/font_size_10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutAddHoroscope2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_8dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/LayoutUserInfos">
+
+                    <ImageView
+                        android:id="@+id/aquaris"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/aquarius" />
+
+                    <TextView
+                        android:id="@+id/txtViewHoroscope2"
+                        android:layout_width="36dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik_medium"
+                        android:gravity="center"
+                        android:text="@string/aquarius"
+                        android:textColor="@color/horoscope"
+                        android:textSize="@dimen/font_size_10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutAddHoroscope3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_8dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/LayoutUserInfos">
+
+                    <ImageView
+                        android:id="@+id/pisces"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pisces" />
+
+                    <TextView
+                        android:id="@+id/txtViewHoroscope3"
+                        android:layout_width="36dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik_medium"
+                        android:gravity="center"
+                        android:text="@string/pisces"
+                        android:textColor="@color/horoscope"
+                        android:textSize="@dimen/font_size_10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutAddHoroscope4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_8dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/LayoutUserInfos">
+
+                    <ImageView
+                        android:id="@+id/aries"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/aries" />
+
+                    <TextView
+                        android:id="@+id/txtViewHoroscope4"
+                        android:layout_width="36dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik_medium"
+                        android:gravity="center"
+                        android:text="@string/aries"
+                        android:textColor="@color/horoscope"
+                        android:textSize="@dimen/font_size_10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutAddHoroscope5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_8dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/LayoutUserInfos">
+
+                    <ImageView
+                        android:id="@+id/taurus"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/taurus" />
+
+                    <TextView
+                        android:id="@+id/txtViewHoroscope5"
+                        android:layout_width="36dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik_medium"
+                        android:gravity="center"
+                        android:text="@string/taurus"
+                        android:textColor="@color/horoscope"
+                        android:textSize="@dimen/font_size_10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutAddHoroscope6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_8dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/LayoutUserInfos">
+
+                    <ImageView
+                        android:id="@+id/gemini"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gemini" />
+
+                    <TextView
+                        android:id="@+id/txtViewHoroscope6"
+                        android:layout_width="36dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik_medium"
+                        android:gravity="center"
+                        android:text="@string/gemini"
+                        android:textColor="@color/horoscope"
+                        android:textSize="@dimen/font_size_10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutAddHoroscope7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_8dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/LayoutUserInfos">
+
+                    <ImageView
+                        android:id="@+id/cancer"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cancer" />
+
+                    <TextView
+                        android:id="@+id/txtViewHoroscope7"
+                        android:layout_width="36dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik_medium"
+                        android:gravity="center"
+                        android:text="@string/cancer"
+                        android:textColor="@color/horoscope"
+                        android:textSize="@dimen/font_size_10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutAddHoroscope8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_8dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/LayoutUserInfos">
+
+                    <ImageView
+                        android:id="@+id/leo"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/leo" />
+
+                    <TextView
+                        android:id="@+id/txtViewHoroscope8"
+                        android:layout_width="36dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik_medium"
+                        android:gravity="center"
+                        android:text="@string/leo"
+                        android:textColor="@color/horoscope"
+                        android:textSize="@dimen/font_size_10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutAddHoroscope9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_8dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/LayoutUserInfos">
+
+                    <ImageView
+                        android:id="@+id/virgo"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/virgo" />
+
+                    <TextView
+                        android:id="@+id/txtViewHoroscope9"
+                        android:layout_width="36dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik_medium"
+                        android:gravity="center"
+                        android:text="@string/virgo"
+                        android:textColor="@color/horoscope"
+                        android:textSize="@dimen/font_size_10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutAddHoroscope10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_8dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/LayoutUserInfos">
+
+                    <ImageView
+                        android:id="@+id/libra"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/libra" />
+
+                    <TextView
+                        android:id="@+id/txtViewHoroscope10"
+                        android:layout_width="36dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik_medium"
+                        android:gravity="center"
+                        android:text="@string/libra"
+                        android:textColor="@color/horoscope"
+                        android:textSize="@dimen/font_size_10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutAddHoroscope11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_8dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/LayoutUserInfos">
+
+                    <ImageView
+                        android:id="@+id/scorpio"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/scorpio" />
+
+                    <TextView
+                        android:id="@+id/txtViewHoroscope11"
+                        android:layout_width="36dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik_medium"
+                        android:gravity="center"
+                        android:text="@string/scorpio"
+                        android:textColor="@color/horoscope"
+                        android:textSize="@dimen/font_size_10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutAddHoroscope12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_8dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/LayoutUserInfos">
+
+                    <ImageView
+                        android:id="@+id/sagittarius"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sagittarius" />
+
+                    <TextView
+                        android:id="@+id/txtViewHoroscope12"
+                        android:layout_width="36dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik_medium"
+                        android:gravity="center"
+                        android:text="@string/sagitarius"
+                        android:textColor="@color/horoscope"
+                        android:textSize="@dimen/font_size_10sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/layoutChooseAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutHoroscope">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_circular3"
+                android:elevation="@dimen/space_32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutHoroscope">
+
+                <ImageView
+                    android:id="@+id/imgViewCoffeeFortune"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="@dimen/space_16dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/coffee_cup"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_circular3"
+                android:elevation="@dimen/space_32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutHoroscope">
+
+                <ImageView
+                    android:id="@+id/imgViewTarotFortune"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="@dimen/space_16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/tarot_card_icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutAdvisorySupport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shape_circular_2"
+            android:elevation="@dimen/space_2dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutChooseAction">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:orientation="vertical"
+                android:padding="@dimen/space_12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="@dimen/space_8dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="@string/advisory_support"
+                    android:textColor="#73326E"
+                    android:textSize="@dimen/font_size_18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/rubik_light"
+                    android:text="@string/advisory_support_explanation"
+                    android:textSize="@dimen/font_size_14sp">
+
+                </TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/advisorySupportButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/add_circular" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutWorkNotice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shape_circular"
+            android:elevation="@dimen/space_2dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutAdvisorySupport"
+            app:layout_constraintWidth_percent="0.8">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/human_resources">
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="@string/work_notice"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/font_size_18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/rubik_light"
+                    android:text="@string/work_notice_exp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/font_size_14sp">
+
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutInstagramNotice"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shape_circular_2"
+            android:elevation="@dimen/space_2dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutWorkNotice"
+            app:layout_constraintWidth_percent="0.8">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:foregroundGravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/instagram_logo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="center_vertical"
+                    android:text="@string/like_instagram_page"
+                    android:textSize="@dimen/font_size_14sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnbtn1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="3"
+                android:text="+10"
+                app:drawableRightCompat="@drawable/add_circular" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutFacebookNotice"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shape_circular_2"
+            android:elevation="@dimen/space_2dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutInstagramNotice"
+            app:layout_constraintWidth_percent="0.8">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:foregroundGravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/facebook_logo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="center_vertical"
+                    android:text="@string/like_facebook_page"
+                    android:textSize="@dimen/font_size_14sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="3"
+                android:text="+10"
+                app:drawableRightCompat="@drawable/add_circular" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

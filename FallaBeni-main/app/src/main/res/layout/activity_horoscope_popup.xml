@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_8dp"
+        android:background="@drawable/popup_horoscope_bg"
+        android:elevation="@dimen/space_24dp"
+        android:orientation="vertical"
+        android:padding="@dimen/space_12dp">
+
+        <TextView
+            android:id="@+id/dailyHoroscopeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_8dp"
+            android:layout_marginBottom="@dimen/space_24dp"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center_horizontal"
+            android:text="Burç Günlük Yorum"
+            android:textAlignment="center"
+            android:textColor="@color/horoscope"
+            android:textSize="@dimen/font_size_18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/dailyHoroscopeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Burç Yorumu"
+            android:textAlignment="center">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

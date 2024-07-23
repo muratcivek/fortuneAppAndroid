@@ -1,0 +1,9 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="800dp"
+    android:height="800dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+  <path
+      android:fillColor="@color/horoscope"
+      android:pathData="M33,34.1V11.9A26.5,26.5 0,0 0,43.4 5.4a1.9,1.9 0,0 0,0 -2.8,1.9 1.9,0 0,0 -2.8,0 23.6,23.6 0,0 1,-33.2 0,1.9 1.9,0 0,0 -2.8,0 1.9,1.9 0,0 0,0 2.8A26.5,26.5 0,0 0,15 11.9V34.1A26.5,26.5 0,0 0,4.6 40.6a1.9,1.9 0,0 0,0 2.8,1.9 1.9,0 0,0 2.8,0 23.6,23.6 0,0 1,33.2 0,1.9 1.9,0 0,0 2.8,0 1.9,1.9 0,0 0,0 -2.8A26.5,26.5 0,0 0,33 34.1ZM19,33V13a27.3,27.3 0,0 0,5 0.5,27.3 27.3,0 0,0 5,-0.5V33a27.3,27.3 0,0 0,-5 -0.5A27.3,27.3 0,0 0,19 33Z"/>
+</vector>

@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Falla Beni</string>
+
+    // Register and login page strings
+    <string name="registerpage_title">Merhaba, profilini oluşturmaya başlayabilirsin</string>
+    <string name="register_with_social_media">Sosyal medya hesaplarını kullanarak kayıt ol</string>
+    <string name="enter_user_name">Kullanıcı Adı</string>
+    <string name="enter_user_mail">E-posta</string>
+    <string name="enter_password">Şifre</string>
+    <string name="validate_password">Şifrenizi doğrulayın</string>
+    <string name="terms_and_conditions">Kayıt olarak koşulları kabul edersiniz</string>
+    <string name="loginpage_title">Merhaba, hesabınıza giriş yapabilirsiniz</string>
+    <string name="remember_me">Beni hatırla</string>
+    <string name="forget_password">Şifrenizi mi unuttunuz?</string>
+    <string name="log_in">Giriş Yap</string>
+    <string name="register">Kayıt Ol</string>
+    <string name="login_with_social_media">Sosyal medya hesaplarını kullanarak giriş yap</string>
+    <string name="dont_have_account">Hesabınız yok mu? <b>Kayıt Ol</b></string>
+
+
+    // Coffee and tarot fortune page strings
+    <string name="upload_image">Kahvenizi gösteren 3 adet resim yükleyin</string>
+    <string name="image_description">Fotoğrafların net ve bütünüyle çekilmiş olmasına özen gösterin</string>
+    <string name="choose_fortune_topic">Lütfen fal konusunu seçin</string>
+    <string name="general_fortune">Genel</string>
+    <string name="love_fortune">Aşk</string>
+    <string name="career_money_fortune">Kariyer</string>
+    <string name="health_fortune">Sağlık</string>
+    <string name="name_surname">Adınız ve soyadınız</string>
+    <string name="sexuality">Cinsiyet</string>
+    <string name="marital_status">Medeni hal</string>
+    <string name="forward">İlerle</string>
+    <string name="coffee_fortune">Kahve Falı</string>
+    <string name="tarot_fortune">Tarot Falı</string>
+    <string name="user_balance">Bakiye</string>
+    <string name="horoscope">Burç</string>
+    <string name="advisory_support">Astroloji Danışmanlık</string>
+    <string name="advisory_support_explanation">Form üzerinden verdiğiniz bilgilere göre haritanız üzerinde teknik çalışmalar yapılır.</string>
+    <string name="work_notice">Bizimle çalışmak ister misiniz?</string>
+    <string name="work_notice_exp">Falcıysanız veya falcı olmak istiyorsanız tıklayınız</string>
+    <string name="like_instagram_page">Instagram sayfamızı beğenin!</string>
+    <string name="like_facebook_page">Facebook sayfamızı beğenin!</string>
+    <string name="like_button">Topla</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+
+    <string name="facebook_app_id">1670663083728843</string>
+    <string name="fb_login_protocol_scheme">fb1670663083728843</string>
+    <string name="facebook_client_token">6982acb014ca15cf636043e76280218f</string>
+    <string name="aries">Koç</string>
+    <string name="capricorn">Oğlak</string>
+    <string name="aquarius">Kova</string>
+    <string name="pisces">Balık</string>
+    <string name="taurus">Boğa</string>
+    <string name="gemini">İkizler</string>
+    <string name="cancer">Yengeç</string>
+    <string name="leo">Aslan</string>
+    <string name="virgo">Başak</string>
+    <string name="libra">Terazi</string>
+    <string name="scorpio">Akrep</string>
+    <string name="sagitarius">Yay</string>
+    <string name="send">Gönder</string>
+
+
+</resources>

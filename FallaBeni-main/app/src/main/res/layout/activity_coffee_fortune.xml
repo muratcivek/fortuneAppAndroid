@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coffeeFortunePage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".CoffeeFortuneActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarBackIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_back">
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/txtUploadImageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_light"
+            android:text="@string/upload_image"
+            android:textSize="@dimen/font_size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarBackIcon">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtViewImgDescription"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/rubik_light"
+            android:gravity="center"
+            android:text="@string/image_description"
+            android:textSize="@dimen/font_size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.469"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtUploadImageTitle">
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtViewImgDescription">
+
+
+            <ImageView
+                android:id="@+id/imageViewAddPhoto1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/space_80dp"
+                android:layout_marginEnd="@dimen/space_8dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_menu_camera">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/imageViewAddPhoto2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/space_80dp"
+                android:layout_marginEnd="@dimen/space_8dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_menu_camera">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/imageViewAddPhoto3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/space_80dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_menu_camera">
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textViewFortuneTopic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_12dp"
+            android:fontFamily="@font/rubik_medium"
+            android:text="@string/choose_fortune_topic"
+            android:textColor="#73326E"
+            android:textSize="@dimen/font_size_16sp"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_12dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFortuneTopic">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp">
+
+                <RadioButton
+                    android:id="@+id/btnGeneral"
+                    android:layout_width="@dimen/space_64dp"
+                    android:layout_height="@dimen/space_64dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/star"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/btnLove"
+                    android:layout_width="@dimen/space_64dp"
+                    android:layout_height="@dimen/space_64dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/heart"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/btnCareer"
+                    android:layout_width="@dimen/space_64dp"
+                    android:layout_height="@dimen/space_64dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/achievement"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/btnHealth"
+                    android:layout_width="@dimen/space_64dp"
+                    android:layout_height="@dimen/space_64dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/health"
+                    android:button="@null" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/rubik_medium"
+                android:gravity="center_horizontal"
+                android:text="@string/general_fortune"
+                android:textAlignment="center">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/rubik_medium"
+                android:gravity="center_horizontal"
+                android:text="@string/love_fortune"
+                android:textAlignment="center"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/rubik_medium"
+                android:gravity="center_horizontal"
+                android:text="@string/career_money_fortune"
+                android:textAlignment="center"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/rubik_medium"
+                android:gravity="center_horizontal"
+                android:text="@string/health_fortune"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_16dp"
+            android:background="@drawable/forward_border"
+            android:orientation="vertical"
+            android:padding="@dimen/space_32dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <EditText
+                android:id="@+id/txtNameSurname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_8dp"
+                android:ems="10"
+                android:fontFamily="@font/rubik_light"
+                android:hint="@string/name_surname"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textSize="@dimen/font_size_16sp">
+
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtSexuality"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_16dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="@font/rubik_light"
+                    android:gravity="center_vertical"
+                    android:text="@string/sexuality">
+
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spinnerSexuality"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/rubik_light"
+                    android:gravity="center">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space_16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtMartialStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_16dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="@font/rubik_light"
+                    android:gravity="center_vertical"
+                    android:text="@string/marital_status">
+
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spinnerMartialStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/rubik_light"
+                    android:gravity="center">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnForward"
+                style="@style/ButtonSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/space_16dp"
+                android:fontFamily="@font/rubik_medium"
+                android:text="@string/send"
+                android:textSize="@dimen/font_size_18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+            </Button>
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
