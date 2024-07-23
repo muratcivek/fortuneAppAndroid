@@ -1,5 +1,5 @@
 ![Uygulama Görseli ](https://github.com/muratcivek/fortuneAppAndroid/blob/main/fortunAppsSreenshot/1.jpg)  
-![Uygulama Görseli ](https://github.com/muratcivek/fortuneAppAndroid/tree/main/fortunAppsSreenshot/2.jpg)  
+![Uygulama Görseli ](https://github.com/muratcivek/fortuneAppAndroid/blob/main/fortunAppsSreenshot/2.jpg)  
 ![Uygulama Görseli ](https://github.com/muratcivek/fortuneAppAndroid/tree/main/fortunAppsSreenshot/3.jpg)  
 ![Uygulama Görseli ](https://github.com/muratcivek/fortuneAppAndroid/tree/main/fortunAppsSreenshot/4.jpg)  
 ![Uygulama Görseli ](https://github.com/muratcivek/fortuneAppAndroid/tree/main/fortunAppsSreenshot/5.jpg)  
