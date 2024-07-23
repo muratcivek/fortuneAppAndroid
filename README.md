@@ -2,7 +2,7 @@
 
 **Kullanıcı girişi (mail, facebook, google),  kimlik doğrulama, burç yorumu (instagram hikaye tasarımında), tarot ya da kahve fal seçeneği, kullanıcı-falcı etkileşim formu ve daha bir çok özellik içeren android uygulaması.**
 
-**Java dili ile Android Studio ortamında yazılmıştır.**
+**Java dili ile Android Studio ortamında yazılmıştır. Veritabanı olarak Firebase seçilmiştir.**
 
 
 
